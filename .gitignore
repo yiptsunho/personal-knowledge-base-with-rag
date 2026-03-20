@@ -1,0 +1,56 @@
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+rag-env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Chroma (vector DB) persistence artifacts
+chroma_db/
+backend/data/chroma_db/
+backend/data/chroma_db/**
+chroma_db/**
+
+# Frontend / Node build artifacts (safe defaults even if frontend is empty)
+node_modules/
+dist/
+build/
+out/
+.next/
+.svelte-kit/
+.turbo/
+
