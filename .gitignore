@@ -54,3 +54,5 @@ out/
 .svelte-kit/
 .turbo/
 
+# test files
+data/test_docs/
