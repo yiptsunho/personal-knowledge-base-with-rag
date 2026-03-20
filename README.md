@@ -18,7 +18,7 @@ A production-style personal knowledge base using local LLM (Ollama), embeddings,
 ### Quick Start
 1. Install Ollama & pull model: `ollama pull llama3.1:8b`
 2. `cd backend`
-3. Activate venv: `source rag-env-312/bin/activate` (or your name)
+3. Activate venv: `source rag-env/bin/activate` (or your name)
 4. `python -m uvicorn app.main:app --reload`
 5. Open http://127.0.0.1:8000/docs
 
