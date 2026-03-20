@@ -9,8 +9,11 @@ from app.core.config import DOCS_DIR
 from pathlib import Path
 import shutil
 from pydantic import WithJsonSchema
+import logging
 
 router = APIRouter()
+
+logger = logging.getLogger(__name__)
 
 # Create a typed alias with the correct schema hint
 BinaryUploadFile = Annotated[
@@ -44,6 +47,7 @@ async def upload_documents(
     )
 
     for file in files:
+        logger.info(f"Processing file: {file.filename}")
         try:
             # Save temporarily (or process in memory)
             file_ext = Path(file.filename).suffix.lower()
